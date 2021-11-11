@@ -1,0 +1,14 @@
+@mixin cards {
+    border: solid rgb(213,221,228) 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 468px;
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: 0.3s;
+    transition-timing-function: linear;
+}

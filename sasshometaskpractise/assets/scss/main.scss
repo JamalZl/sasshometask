@@ -1,0 +1,116 @@
+@import "../scss/mixins/mixin";
+*{
+    box-sizing: border-box;
+}
+#whatwedo{
+.container{
+    width: 1190px;
+    .row{
+        display: flex;
+        justify-content:space-around;
+        align-content: space-around;
+        height: 100vh;
+        .text{
+            h2{
+                color:rgb(45,49,146);
+            }
+        }
+        .more{
+            display: flex;
+            justify-content: end;
+            padding-right: 18px;
+            .more-flex{
+                button{
+                    i{
+                      color: orange;
+                      transition: 0.3s;
+                      transition-timing-function: linear;
+                    }
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    background-color: white;
+                    width: 196px;
+                    height: 55px;
+                    border:rgb(213,221,228) solid 3px ;
+                    border-radius: 8px;
+                    font-weight: bold;
+                    transition: 0.3s;
+                }
+                button:hover{
+                    border: orange solid 3px;
+                }
+                button:hover i{
+                    transform: translate(8px);
+                }
+            a{
+                text-decoration: none;
+            color: black;
+            
+            }
+            }
+        }
+        .AI{
+            @include cards();
+            
+        }
+        .AI:hover{
+          transform: scale(1.05);
+        }
+        .Micro{
+            @include cards();
+        }
+        .Micro:hover{
+            transform: scale(1.05);
+        }
+        .Big{
+            @include cards();
+        }
+        .Big:hover{
+            transform: scale(1.05);
+        }
+
+    }
+}
+}
+#tech{
+    
+    .back-image{
+        .back-color{
+            background-color: rgba($color:rgb(32,37,98), $alpha: 0.7);
+            position: absolute;
+            right: 0px;
+            width: 50%;
+            height: 100vh;
+            z-index: 1;
+        }
+        position: relative;
+        z-index: 0;
+        background-image: url(https://www.simbrella.com/site/assets/files/1049/solutions_bg-1.jpg);
+        background-repeat: no-repeat;
+        background-position:center;
+        width: 100%;
+        height: 100vh;
+        background-attachment: fixed;
+        .container{
+            .row{
+                     display: flex;
+                    align-items: center;
+                    height: 100vh;
+                .title{
+                    font-size: 53px;
+                    color: white;
+                    font-weight: bold;
+                }
+                .info{
+                    padding-left: 55px;
+                    color: white;
+                    font-size: 22px;
+                    z-index: 2;
+                    font-weight: bold;
+                    line-height: 3;
+                }
+            }
+        }
+    }
+}
